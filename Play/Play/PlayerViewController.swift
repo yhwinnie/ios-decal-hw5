@@ -137,6 +137,7 @@ class PlayerViewController: UIViewController {
      * Called when the next button is tapped. It should check if there is a next
      * track, and if so it will load the next track's data and
      * automatically play the song if a song is already playing
+     * Remember to update the currentIndex
      */
     func nextTrackTapped(sender: UIButton) {
     
@@ -149,6 +150,7 @@ class PlayerViewController: UIViewController {
      *    b) Otherwise, check if there is a previous track, and if so it will 
      *       load the previous track's data and automatically play the song if
      *      a song is already playing
+     *  Remember to update the currentIndex if necessary
      */
 
     func previousTrackTapped(sender: UIButton) {
