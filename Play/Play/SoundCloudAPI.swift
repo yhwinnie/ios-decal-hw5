@@ -24,7 +24,9 @@ class SoundCloudAPI {
                     let trackDataList = playlistDict.objectForKey("tracks") as! [NSDictionary]
                     for trackData in trackDataList {
                         let track = Track(data: trackData)
-                        tracks.append(track)
+                        if (track.canStream!) {
+                            tracks.append(track)
+                        }
                     }
                     
                     let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
