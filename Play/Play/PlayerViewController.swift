@@ -214,8 +214,7 @@ class PlayerViewController: UIViewController {
         }
     }
     
-    
-    
+
     func asyncLoadTrackImage(track: Track) {
         let url = NSURL(string: track.artworkURL)
         let session = NSURLSession.sharedSession()
